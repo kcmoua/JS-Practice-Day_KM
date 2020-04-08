@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A BIG MESS</title>
 </head>
 <body>
-    
+    <h1>This page is a big mess.</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>dot 1</li>
+        <li>dot 2</li>
+        <li>dot 3</li>
+    </ol>
+
+    <input type="text" id="inText">
+    <button>I don't do anything.</button>
 
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        
+        $("body").each(function(){
+            var ran = Math.random()*500;
+            $(this).css({"position":"absolute", "top":ran, "left":ran});
+        })
     </script>
 </body>
 </html>
