@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .over, .out{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hover over me!</h1>
+    </div>
+        <p class="over">OVER</p>
+        <p class="out">OUT</p>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $("div").hover(function(){
+            $(".over").css("color","black");
+            $(".out").css("color","white");
+        }, function(){
+            $(".out").css("color","black");
+            $(".over").css("color","white");
+        });
+    </script>
+</body>
+</html>
